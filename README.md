@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Joke Generator App - React App with rapidapi, Custom Hooks and tailwindcss
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is a simple React App that uses the [RapidAPI](https://rapidapi.com/) to fetch jokes from the [JokeAPI](https://rapidapi.com/KegenGuyll/api/jokeapi) and display them on the page. It also uses [TailwindCSS](https://tailwindcss.com/) for styling and [Custom Hooks](https://reactjs.org/docs/hooks-custom.html) to fetch the data from the API.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+To install this app, you need to have [Node.js](https://nodejs.org/en/) installed on your machine. After that, you can clone this repository and run the following command in the project directory:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm install
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+To run this app, you need to have a RapidAPI account and an API key. You can get one [here](https://rapidapi.com/). After that, you need to create a `.env` file in the root directory of the project and add the following line:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm start
+```
 
-### `npm run build`
+## Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate. 
+[/code]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[Image: image] 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://github.com/BhanukaKrish/joke-generator-yt/blob/main/image.jpg" width="400">
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[MIT](https://choosealicense.com/licenses/mit/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[![Bhanuka Krishantha](https://avatars.githubusercontent.com/u/43912470?s=460&u=9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b&v=4)]() 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[![Bhanuka Krishantha](https://img.shields.io/badge/Bhanuka-Krishantha-blue)]()
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
