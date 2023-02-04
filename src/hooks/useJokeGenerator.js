@@ -13,9 +13,8 @@ const useJokeGenerator = (newJoke) => {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
-            "X-RapidAPI-Key":
-              "f6f40103c4mshf23d29c70f8a0bap137182jsn235e76a27638",
-            "X-RapidAPI-Host": "jokeapi-v2.p.rapidapi.com",
+            "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
+            "X-RapidAPI-Host": process.env.REACT_APP_RAPID_API_HOST,
           },
         }
       )
