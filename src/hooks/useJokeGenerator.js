@@ -3,11 +3,10 @@ import { useEffect, useState } from "react";
 const useJokeGenerator = (newJoke) => {
   const [data, setData] = useState([]);
   const [isPending, setIsPending] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
-      await fetch(
+      const response = await fetch(
         "https://jokeapi-v2.p.rapidapi.com/joke/Programming?type=single",
         {
           method: "GET",
@@ -17,27 +16,19 @@ const useJokeGenerator = (newJoke) => {
             "X-RapidAPI-Host": process.env.REACT_APP_RAPID_API_HOST,
           },
         }
-      )
-        .then((res) => {
-          if (!res.ok) {
-            throw Error("Could not fetch the data for that resource");
-          }
-          return res.json();
-        })
-        .then((data) => {
-          setData(data);
-          setIsPending(false);
-          setError(null);
-        })
-        .catch((err) => {
-          setIsPending(false);
-          setError(err.message);
-        });
+      );
+      if (!response.ok) {
+        throw new Error("Could not fetch the data for that resource");
+      }
+      const responseData = await response.json();
+      setData(responseData);
+      setIsPending(false);
     };
+
     fetchData();
   }, [newJoke]);
 
-  return { data, isPending, error };
+  return { data, isPending };
 };
 
 export default useJokeGenerator;
